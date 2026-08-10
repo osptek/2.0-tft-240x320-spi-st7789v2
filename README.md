@@ -2,7 +2,7 @@
 
 <h1 align="center">OSPTEK 2.0″ TFT 240×320（ST7789V2 · SPI）</h1>
 
-<p align="center"><b>TFT / IPS 模组 · SPI · ST7789V2</b></p>
+<p align="center"><b>TFT 模组 · SPI · ST7789V2 · 多版本索引</b></p>
 
 <p align="center"><a href="./README_EN.md">English</a> | 简体中文</p>
 
@@ -13,79 +13,58 @@
   <img alt="Driver: ST7789V2" src="https://img.shields.io/badge/Driver-ST7789V2-E7352C?style=flat-square" />
 </p>
 
-<p align="center"><img alt="OSPTEK 2.0 寸 240×320 TFT SPI 模组（ST7789V2）宣传图" src="./images/product.png" width="640" /></p>
-
 ## 目录
 
-- [产品简介](#产品简介)
-- [规格参数](#规格参数)
-- [示例工程](#示例工程)
-- [仓库结构](#仓库结构)
-- [相关资料](#相关资料)
+- [说明](#说明)
+- [版本一览](#版本一览)
+- [YDP200HB001-P8](#ydp200hb001-p8)
+- [如何切换分支](#如何切换分支)
 - [购买链接](#购买链接)
 - [技术支持](#技术支持)
 
 ---
 
-## 产品简介
+## 说明
 
-OSPTEK **2.0 寸 240×320 TFT（IPS）** 是一款 **SPI** 接口彩色显示模组，显示驱动为 **ST7789V2**。适合手持终端、仪表与小型竖屏 HMI 等场景。
+本仓库收录 **2.0 寸 240×320 TFT（SPI · ST7789V2）** 显示模组资料。
+
+**`main` 为导航页**（仓库默认分支）。下表可快速浏览各版本；点击「说明」跳转到本页下方的详细介绍。需要某一版本的完整内容时，请切换到对应**版本分支**（方法见下文）。
 
 规格标识（仓库名）：`2.0-tft-240x320-spi-st7789v2`
 
-当前模组版本：**YDP200HB001-P8**。外形细节以 [`docs/YDP200HB001-P8_外形图.pdf`](./docs/YDP200HB001-P8_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) 为准。
+---
 
-## 规格参数
+## 版本一览
 
-| 项目 | 规格 |
-| ---- | ---- |
-| 尺寸 | 2.0 英寸 |
-| 类型 | TFT / IPS（彩色） |
-| 分辨率 | 240×320 |
-| 接口 | SPI |
-| 驱动 IC | ST7789V2 |
+| 版本 | 宣传图 | 说明 |
+| ---- | ------ | ---- |
+| YDP200HB001-P8 | <img alt="YDP200HB001-P8" src="./images/YDP200HB001-P8.png" width="120" /> | [查看详情](#ydp200hb001-p8) |
 
-> 完整外形尺寸、FPC 定义、供电与时序以产品规格书 / 驱动手册为准。
+---
 
-## 示例工程
+## YDP200HB001-P8
 
-| 说明 | 路径 |
-| ---- | ---- |
-| ESP32-S3 · ST7789V2 SPI + LVGL9（心率表盘 UI 演示） | [`examples/esp32s3-2.0-tft-240x320-spi-st7789v2-bringup/`](./examples/esp32s3-2.0-tft-240x320-spi-st7789v2-bringup/) |
+<p align="center"><img alt="YDP200HB001-P8" src="./images/YDP200HB001-P8.png" width="320" /></p>
 
-## 仓库结构
+**说明：** 模组。
 
-```text
-2.0-tft-240x320-spi-st7789v2/
-├── README.md
-├── README_EN.md
-├── MODULE_VERSION.md
-├── LICENSE
-├── images/          # README 用图
-├── docs/            # 外形图、规格书、驱动手册等
-└── examples/        # 示例工程
-```
+---
 
-## 相关资料
+## 如何切换分支
 
-### 本产品资料
+完整产品资料在各**版本分支**中；`main` 仅作导航。
 
-| 资料 | 链接 |
-| ---- | ---- |
-| 外形图（YDP200HB001-P8） | [`docs/YDP200HB001-P8_外形图.pdf`](./docs/YDP200HB001-P8_%E5%A4%96%E5%BD%A2%E5%9B%BE.pdf) |
-| 驱动 IC 数据手册（ST7789V2） | [`docs/ST_7789_V2_SPEC_V1_0_d12b618112.pdf`](./docs/ST_7789_V2_SPEC_V1_0_d12b618112.pdf) |
-| 初始化序列（BOE 2.0 IPS · 2.2 Gamma） | [`docs/1_BOE2.0IPS(PV020QVQ-N81-1Q00)+ST7789V2-2.2Gamma-20200702.txt`](./docs/1_BOE2.0IPS%28PV020QVQ-N81-1Q00%29%2BST7789V2-2.2Gamma-20200702.txt) |
+- **网页：** 在仓库页左上角打开分支下拉框，选择与料号对应的版本分支即可。
+- **命令行：** 克隆本仓库后执行 `git checkout <版本分支名>`；若本地已有仓库，先 `git fetch` 再切换。
 
-### 示例工程
-
-- [ESP32-S3 ST7789V2 SPI + LVGL9 bringup](./examples/esp32s3-2.0-tft-240x320-spi-st7789v2-bringup/)
+---
 
 ## 购买链接
 
 <p align="center">
   <a href="https://shop110742373.taobao.com/"><img alt="淘宝官方店铺" src="https://img.shields.io/badge/淘宝-官方店铺-FF6A00?style=for-the-badge" /></a>
   &nbsp;&nbsp;
-  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-FF6A00?style=for-the-badge" /></a>
+  <a href="https://www.aliexpress.com/store/1105701619"><img alt="速卖通官方店铺" src="https://img.shields.io/badge/速卖通-官方店铺-E62E04?style=for-the-badge&logo=aliexpress&logoColor=white" /></a>
 </p>
 
 **国内（淘宝）**
@@ -95,6 +74,8 @@ OSPTEK **2.0 寸 240×320 TFT（IPS）** 是一款 **SPI** 接口彩色显示模
 **海外（AliExpress）**
 
 - 店铺：[OSPTEK Official Store](https://www.aliexpress.com/store/1105701619)
+
+---
 
 ## 技术支持
 

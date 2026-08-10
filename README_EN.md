@@ -46,8 +46,6 @@ Repo id: `2.0-tft-240x320-spi-st7789v2`
 
 <p align="center"><img alt="YDP200HB001-P8" src="./images/YDP200HB001-P8.png" width="320" /></p>
 
-**Notes:** Module.
-
 ---
 
 ## How to Switch Branches

@@ -46,6 +46,8 @@
 
 <p align="center"><img alt="YDP200HB001-P8" src="./images/YDP200HB001-P8.png" width="320" /></p>
 
+**说明：** 模组。
+
 ---
 
 ## 如何切换分支
